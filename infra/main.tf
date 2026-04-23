@@ -19,6 +19,7 @@ terraform {
 
 provider "azurerm" {
   features {}
+  use_cli = false
 }
 resource "azurerm_resource_group" "rg" {
   name     = "rg-hcp-demo"
@@ -38,3 +39,4 @@ resource "random_string" "rand" {
   special = false
   upper   = false
 }
+# HCP Terraform VCS trigger test
